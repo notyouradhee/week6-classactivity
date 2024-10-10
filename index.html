@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Nepali Store</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to Our Online Nepali Store</h1>
+        <nav>
+            <ul>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#order">Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="products">
+        <h2>Available Products</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Item Name</th>
+                    <th>Price</th>
+                    <th>Description</th>
+                    <th>Image</th> 
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Momo</td>
+                    <td>$10.00</td>
+                    <td>Momo is a type of dumplings, very popular in the Himalayan region, including Nepal & Tibet and now there is a growing popularity world wide.</td>
+                    <td><img src="https://www.thedailymeal.com/img/gallery/what-makes-nepalese-momo-unique/intro-1671505255.jpg" alt="Product 1 Image" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Chowmin</td>
+                    <td>$8.00</td>
+                    <td>Chowmin is a popular stir-fried noodle dish with vegetables and/or meat, commonly found in Chinese and Nepalese cuisine.</td>
+                    <td><img src="https://shubhakarya.net/admin/uploads/featured-image/170394277840308664565901a7abf6a6chicken-chowmin.jpg" alt="Chowmin Image" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Burger</td>
+                    <td>$5.00</td>
+                    <td>A classic American fast-food item, the burger consists of a bun filled with a ground meat patty, vegetables, and sauces.</td>
+                    <td><img src="https://i.redd.it/6vo2kpwbm20a1.jpg" alt="Burger Image" width="50"></td>
+                </tr>
+                <tr>
+                    <td>Samosa Chaat</td>
+                    <td>$6.00</td>
+                    <td>Samosa Chaat is an Indian snack made of smashed samosas topped with yogurt, chutneys, and spices, a popular street food dish.</td>
+                    <td><img src="https://5.imimg.com/data5/WE/NX/GLADMIN-49955426/zdgsgsh.png" alt="Samosa Chaat Image" width="50"></td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <section id="order">
+        <h2>Place Your Order</h2>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            <br>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+
+            <label for="product">Select Product:</label>
+            <select id="product" name="product">
+                <option value="MoMo">MoMo</option>
+                <option value="Chowmin">Chowmin</option>
+                <option value="Burger">Burger</option>
+                <option value="Samosa Chaat">Samosa Chaat</option>
+                
+            </select>
+            <br>
+
+            <label for="quantity">Quantity:</label>
+            <input type="number" id="quantity" name="quantity" min="1" max="10" required>
+            <br>
+
+            <input type="submit" value="Submit Order">
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Online Store. All rights reserved.</p>
+    </footer>
+</body>
+</html>
